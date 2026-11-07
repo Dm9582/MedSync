@@ -223,9 +223,9 @@ For support, email support@medsync.com or join our Slack channel.
 
 ## 🔗 Links
 
-- **Live Demo**: [https://medsync-demo.vercel.app](https://medsync-demo.vercel.app)
-- **Documentation**: [https://docs.medsync.com](https://docs.medsync.com)
-- **API Reference**: [https://api.medsync.com](https://api.medsync.com)
+- **Live Demo**: [https://medsync-hospital.vercel.app](https://medsync-hospital.vercel.app)
+- **Repository**: [https://github.com/Dm9582/MedSync](https://github.com/Dm9582/MedSync)
+- **Demo credentials**: `demo@medsync.com` / `123456`
 
 ---
 

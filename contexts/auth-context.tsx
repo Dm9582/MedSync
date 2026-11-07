@@ -56,7 +56,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
 
     try {
-      await account.createEmailSession(email, password);
+      await account.createEmailPasswordSession(email, password);
       await checkAuth();
     } catch (error) {
       throw error;
@@ -66,7 +66,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const register = async (email: string, password: string, name: string, phone: string) => {
     try {
       await account.create('unique()', email, password, name);
-      await account.createEmailSession(email, password);
+      await account.createEmailPasswordSession(email, password);
       await checkAuth();
     } catch (error) {
       throw error;

@@ -1,9 +1,5 @@
 import OpenAI from 'openai';
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-
 const MEDICAL_SYSTEM_PROMPT = `You are Dr. MedSync, a highly knowledgeable AI health assistant specifically designed for Indian patients. You provide comprehensive medical guidance combining modern medicine with traditional Indian remedies.
 
 CORE PRINCIPLES:
@@ -110,6 +106,10 @@ Use our Emergency Services for immediate healthcare needs.
 
 आपका स्वास्थ्य हमारी प्राथमिकता है! Your health is our priority! 🏥💚`;
     }
+
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
 
     const completion = await openai.chat.completions.create({
       model: "gpt-3.5-turbo",
